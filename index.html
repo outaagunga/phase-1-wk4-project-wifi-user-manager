@@ -1,56 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jeco WiFi Enterprise</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>WiFi User Manager</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Welcome to Jeco WiFi Enterprise</h1>
-    <!-- Add navigation links if needed -->
+    <h1>WiFi User Manager</h1>
+    <nav>
+      <!-- Add navigation links if needed -->
+    </nav>
   </header>
 
   <main>
-    <section id="registration">
-      <h2>Register for WiFi Services</h2>
-      <form action="/register" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-
-        <input type="submit" value="Register">
-      </form>
+    <section id="client-list">
+      <h2>Connected Clients</h2>
+      <ul id="clients">
+        <!-- Client list items will be dynamically added here -->
+      </ul>
     </section>
 
-    <h3>If already registered, please login here</h3>
-    <section id="login">
-      <h2>Login</h2>
-      <form action="/login" method="POST">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-
-        <input type="submit" value="Login">
-      </form>
+    <section id="client-details">
+      <h2>Client Details</h2>
+      <div id="client-info">
+        <!-- Client details will be dynamically displayed here -->
+      </div>
     </section>
 
-    <section id="account-management">
-      <h2>Account Management</h2>
-      <!-- Add forms or links for managing client accounts, such as updating service plans, making payments, and requesting support -->
+    <section id="admin-controls">
+      <h2>Admin Controls</h2>
+      <div id="block-unblock-form">
+        <!-- Admin controls form will be dynamically generated here -->
+      </div>
+    </section>
+
+    <section id="user-profile">
+      <h2>User Profile</h2>
+      <div id="user-info">
+        <!-- User profile information will be dynamically displayed here -->
+      </div>
+      <div id="edit-profile-form">
+        <!-- User profile edit form will be dynamically generated here -->
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2023 Jeco WiFi Enterprise. All rights reserved.</p>
-  </footer>
+  <script src="script.js"></script>
 </body>
 </html>

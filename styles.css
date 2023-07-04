@@ -1,98 +1,55 @@
-/* Reset default browser styles */
-* {
+/* Add your CSS styling for the WiFi User Manager app here */
+
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
   }
   
-  /* Apply styles to the body and main sections */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-  }
-  
-  main {
-    max-width: 800px;
-    margin: 0 auto;
+  header {
+    background-color: #333;
+    color: #fff;
     padding: 20px;
   }
   
-  /* Style the header section */
-  header {
-    text-align: center;
-    margin-bottom: 30px;
+  nav {
+    /* Add any styling for navigation links if needed */
   }
   
-  h1 {
-    font-size: 28px;
-    margin-bottom: 10px;
+  main {
+    padding: 20px;
+    background-color: rgb(141, 233, 233);
   }
   
-  /* Style the forms */
-  form {
-    margin-bottom: 20px;
+  h1, h2 {
+    margin-top: 0;
   }
   
-  label {
-    display: block;
-    margin-bottom: 5px;
+  #clients {
+    list-style-type: none;
+    padding: 0;
   }
   
-  input[type="text"],
-  input[type="email"],
-  input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  input[type="submit"] {
-    background-color: #4caf50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
+  #clients li {
     cursor: pointer;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #45a049;
-  }
-  
-  /* Style the account management section */
-  #account-management {
-    border-top: 1px solid #ccc;
-    padding-top: 20px;
-  }
-  
-  h2 {
-    font-size: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
     margin-bottom: 10px;
   }
   
-  /* Style the footer section */
-  footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
+  #client-info {
+    /* Add styling for client details section */
   }
   
-  /* Media query for responsiveness */
-  @media (max-width: 600px) {
-    main {
-      padding: 10px;
-    }
+  #block-unblock-form {
+    /* Add styling for admin controls section */
+  }
   
-    h1 {
-      font-size: 24px;
-    }
+  #user-info {
+    /* Add styling for user profile section */
+  }
   
-    input[type="submit"] {
-      padding: 8px 16px;
-    }
+  #edit-profile-form {
+    /* Add styling for user profile edit form */
   }
   
