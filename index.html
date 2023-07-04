@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeco WiFi Enterprise</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+  <header>
+    <h1>Welcome to Jeco WiFi Enterprise</h1>
+    <!-- Add navigation links if needed -->
+  </header>
+
+  <main>
+    <section id="registration">
+      <h2>Register for WiFi Services</h2>
+      <form action="/register" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="Register">
+      </form>
+    </section>
+
+    <h3>If already registered, please login here</h3>
+    <section id="login">
+      <h2>Login</h2>
+      <form action="/login" method="POST">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="Login">
+      </form>
+    </section>
+
+    <section id="account-management">
+      <h2>Account Management</h2>
+      <!-- Add forms or links for managing client accounts, such as updating service plans, making payments, and requesting support -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Jeco WiFi Enterprise. All rights reserved.</p>
+  </footer>
 </body>
 </html>
