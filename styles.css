@@ -1,55 +1,152 @@
 /* Add your CSS styling for the WiFi User Manager app here */
+#mainPart {
+  border: 1.5px solid black;
+  background-image: url(images/back.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  filter: (0.7);
+}
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  nav {
-    /* Add any styling for navigation links if needed */
-  }
-  
-  main {
-    padding: 20px;
-    background-color: rgb(141, 233, 233);
-  }
-  
-  h1, h2 {
-    margin-top: 0;
-  }
-  
-  #clients {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  #clients li {
-    cursor: pointer;
-    padding: 10px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-  }
-  
-  #client-info {
-    /* Add styling for client details section */
-  }
-  
-  #block-unblock-form {
-    /* Add styling for admin controls section */
-  }
-  
-  #user-info {
-    /* Add styling for user profile section */
-  }
-  
-  #edit-profile-form {
-    /* Add styling for user profile edit form */
-  }
-  
+/* Styling for Images */
+#wifiImage {
+  width: auto;
+  height: 7%;
+  border: 1px solid black;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  padding: .2%;
+}
+#phoneImage {
+  width: auto;
+  height: 7%;
+  border: 1px solid black;
+  position: absolute;
+  top: 2%;
+  left: 30%;
+  padding: .2%;
+}
+
+#settingImage {
+  width: auto;
+  height: 7%;
+  border: 1px solid black;
+  position: absolute;
+  top: 2%;
+  left: 55%;
+  padding: .2%;
+}
+
+#helpImage {
+  width: auto;
+  height: 7%;
+  border: 1px solid black;
+  position: absolute;
+  top: 2%;
+  left: 70%;
+  padding: .2%;
+}
+/* Styling for Styling for header */
+#topsection {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+   border: 1px solid black;
+   box-sizing: border-box;
+  padding: 2.5%;
+  background-color: chartreuse;
+}
+/* Styling for heading1 section */
+#heading1 {
+  width: 100%;
+  height: auto;
+   border: 1px solid black;
+  padding: 2.5%;
+  background-color: #111111;
+  color: aliceblue;
+  text-align: center;
+  font-size: 300%;
+}
+/* Styling for services corner */
+#services1 {
+  width: 20%;
+  height: auto;
+  border: 1px solid black;
+  padding: 0;
+  background-color: #e6cece;
+  color: darkgreen;
+  text-align: center;
+  font-size: medium;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0;
+}
+/* Styling for users */
+#users {
+  width: 20%;
+  height: auto;
+  border: 1px solid black;
+  padding: 0;
+  background-color: #e6cece;
+  color: darkgreen;
+  text-align: center;
+  font-size: medium;
+  margin-left: 0%;
+  margin-right: auto;
+  border-radius: 0%;
+  margin-top: 0%;
+}
+/* Styling for online clients */
+#connectedClients {
+  width: 20%;
+  height: auto;
+  border: 1px solid black;
+  padding: 0;
+  background-color: #e6cece;
+  color: darkgreen;
+  text-align: center;
+  font-size: medium;
+  margin-left: 0%;
+  margin-right: auto;
+  border-radius: 0%;
+  margin-top: 5%;
+}
+
+/* Styling for Admin corner */
+#isAdmin {
+  width: 20%;
+  height: auto;
+  border: 1px solid black;
+  padding: 0;
+  background-color: #e6cece;
+  color: darkgreen;
+  text-align: center;
+  font-size: medium;
+  margin-left:auto;
+  margin-right: 0%;
+  border-radius: 0%;
+  margin-top: 0%;
+}
+/* Styling for footer */
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+footer p:first-child {
+  margin-top: 0;
+}
+
+footer p:last-child {
+  margin-bottom: 0;
+  font-style: italic;
+}

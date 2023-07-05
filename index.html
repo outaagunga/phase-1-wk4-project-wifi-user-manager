@@ -1,50 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>WiFi User Manager</title>
+  <title>Jeco Enterprizes WiFi User Manager</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>WiFi User Manager</h1>
+  
+   <header>
+    <section id="topsection"> 
+      <div>
+        <img src="images/wifi.png" alt="image" id="wifiImage">
+      </div>
+      
+      <div>
+        <img src="images/phone.jpeg" alt="image" id="phoneImage">
+      </div>
+
+      <div>
+        <img src="images/setting.jpeg" alt="image" id="settingImage">
+      </div>
+
+      <div>
+        <img src="images/help.png" alt="image" id="helpImage">
+      </div>
+     </section>
+
+  <Section> 
+
+    <h1 id="heading1">Jeco Enterprizes WiFi User Manager</h1>
+  </Section>
     <nav>
       <!-- Add navigation links if needed -->
     </nav>
   </header>
-
-  <main>
-    <section id="client-list">
-      <h2>Connected Clients</h2>
-      <ul id="clients">
-        <!-- Client list items will be dynamically added here -->
+  
+  <main id="mainPart"> 
+  <section id="services1">
+    <h2>Our Services</h2>
+    <p>We offer a wide range of ......</p>
+    <ul id="servicesList"></ul>
+  </section>
+  
+    
+    <section id="users">
+      <h2>Beloved users for our services</h2>
+      <ul id="theusers">
+        <!-- users list items will be dynamically added here -->
       </ul>
     </section>
 
-    <section id="client-details">
-      <h2>Client Details</h2>
-      <div id="client-info">
-        <!-- Client details will be dynamically displayed here -->
-      </div>
+    <section id="connectedClients">
+      <h2>These are the clients who are online now</h2>
+      <ul id="online1">
+        <!-- online clients details will be dynamically displayed here -->
+      </ul>
     </section>
 
-    <section id="admin-controls">
-      <h2>Admin Controls</h2>
+    <section id="isAdmin">
+      <h2>Admin Corner</h2>
+      <p>Login to manage connected clients</p>
       <div id="block-unblock-form">
         <!-- Admin controls form will be dynamically generated here -->
       </div>
     </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Jeco Enterprise Wifi services. All rights reserved.</p>
+      <p>Created and manged by mc. Agunga</p>
+  </footer>
 
-    <section id="user-profile">
-      <h2>User Profile</h2>
-      <div id="user-info">
-        <!-- User profile information will be dynamically displayed here -->
-      </div>
-      <div id="edit-profile-form">
-        <!-- User profile edit form will be dynamically generated here -->
-      </div>
-    </section>
-  </main>
-
-  <script src="script.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
