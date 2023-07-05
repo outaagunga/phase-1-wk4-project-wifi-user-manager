@@ -34,16 +34,27 @@
     </nav>
   </header>
   
-  <main id="mainPart"> 
-  <section id="services1">
-    <h2>Our Services</h2>
-    <p>We offer a wide range of ......</p>
-    <ul id="servicesList"></ul>
-  </section>
+  <main id="mainPart">
+    <section id="services1">
+      <h2>Our Services</h2>
+      <p>Please select your desired package</p>
+      
+      <select id="packageDropdown">
+        <option value="">Select a package</option>
+        <option value="basic">Starter Package 4mbps @ 600/=</option>
+        <option value="basic">Basic Package 8mbps @ 1,500/=</option>
+        <option value="standard">Standard Package 20mbps @ 3,000/=</option>
+        <option value="premium">Premium Package 40mbps @ 5,000/=</option>
+      </select>
+      
+      <ul id="servicesList"></ul>
+    </section>
+  </main>
   
     
     <section id="users">
-      <h2>Beloved users for our services</h2>
+      <h2>Our customers</h2>
+      <p>Here are our customers at a glance:</p>
       <ul id="theusers">
         <!-- users list items will be dynamically added here -->
       </ul>
@@ -58,11 +69,12 @@
 
     <section id="isAdmin">
       <h2>Admin Corner</h2>
-      <p>Login to manage connected clients</p>
+      <p>Login to <a href="login.html">manage connected clients</a></p>
       <div id="block-unblock-form">
         <!-- Admin controls form will be dynamically generated here -->
       </div>
     </section>
+    
     </main>
     <footer>
       <p>&copy; 2023 Jeco Enterprise Wifi services. All rights reserved.</p>
