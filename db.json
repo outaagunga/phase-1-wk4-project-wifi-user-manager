@@ -9,28 +9,48 @@
       "password": "pass123"
     },
     {
+      "id": 2,
       "username": "Wycliffe Ouma",
       "email": "oumawycliffe@gmail.com",
       "phone": "0720876376",
       "package": "starter",
-      "password": "12345678o",
-      "id": 2
+      "password": "12345678o"
     },
     {
+      "id": 3,
       "username": "Ahmed Mohamed",
       "email": "moha12@gmail.com",
       "phone": "0720021657",
       "package": "starter",
-      "password": "1234567m",
-      "id": 3
+      "password": "1234567m"
     },
     {
+      "id": 4,
       "username": "David Opiyo",
       "email": "iboyie@gmail.com",
       "phone": "0710360936",
       "package": "premium",
-      "password": "abogoi",
-      "id": 4
+      "password": "abogoi"
+    }
+  ],
+  "admin": [
+    {
+      "id": 1,
+      "username": "systemadmin",
+      "email": "systemadmin@gmail.com",
+      "phone": "+254720905275",
+      "package": "exempted",
+      "password": "admin-123"
+    },
+    {
+      "username": "systemadmin",
+      "password": "admin12",
+      "id": 2
+    },
+    {
+      "username": "systemadmin",
+      "password": "admin123",
+      "id": 3
     }
   ]
 }
