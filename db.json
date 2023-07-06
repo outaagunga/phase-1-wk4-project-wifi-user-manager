@@ -23,6 +23,14 @@
       "package": "starter",
       "password": "1234567m",
       "id": 3
+    },
+    {
+      "username": "David Opiyo",
+      "email": "iboyie@gmail.com",
+      "phone": "0710360936",
+      "package": "premium",
+      "password": "abogoi",
+      "id": 4
     }
   ]
 }

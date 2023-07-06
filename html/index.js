@@ -21,29 +21,53 @@ document.getElementById("packageDropdown").addEventListener("change", function()
 
 
 
-// Fetch users from the local API
-fetch('http://localhost:3000/users')
-.then(response => response.json())
-.then(users => {
-// Get the users section and the users list
-const usersSection = document.getElementById('users');
-const usersList = document.getElementById('theusers');
 
 
-// Create a list item for each user
-users.forEach(user => {
-const listItem = document.createElement('li');
-listItem.textContent = user.name;
-usersList.appendChild(listItem);
-});
 
 
-// Append the users list to the users section
-usersSection.appendChild(usersList);
-})
-.catch(error => {
-console.error('Error fetching users:', error);
-});
+
+
+
+
+
+
+
+
+
+// index.js
+
+document.addEventListener("DOMContentLoaded", getUsers);
+
+async function getUsers() {
+  try {
+    const response = await fetch("http://localhost:3000/users");
+    const users = await response.json();
+
+    const usersList = document.getElementById("theusers");
+    users.forEach((user) => {
+      const listItem = document.createElement("li");
+      listItem.textContent = user.username;
+      usersList.appendChild(listItem);
+    });
+  } catch (error) {
+    console.error("Error fetching users:", error);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
