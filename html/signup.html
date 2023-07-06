@@ -64,21 +64,31 @@
     <form action="" method="POST">
       <label for="username">Username:</label>
       <input type="text" id="username" name="username" required>
-
+  
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" required>
-
+  
       <label for="phone">Phone Number:</label>
       <input type="tel" id="phone" name="phone" required>
-
+  
+      <label for="package">Desired Package:</label>
+      <select id="package" name="package" required>
+        <option value="starter">Starter Package 4mbps @ 600/=</option>
+        <option value="basic">Basic Package 8mbps @ 1,500/=</option>
+        <option value="standard">Standard Package 20mbps @ 3,000/=</option>
+        <option value="premium">Premium Package 40mbps @ 5,000/=</option>
+      </select>
+  
       <label for="password">Password:</label>
       <input type="password" id="password" name="password" required>
-
+  
       <label for="confirm-password">Confirm Password:</label>
       <input type="password" id="confirm-password" name="confirm-password" required>
-
+  
       <input type="submit" value="Sign Up">
     </form>
   </div>
+  
+  <script src="signup.js"></script>
 </body>
 </html>
