@@ -87,6 +87,26 @@
   margin-right: auto;
   border-radius: 0;
 }
+
+/* Styling for Admin Panel */
+#adminPanel {
+  width: 15%;
+  height: auto;
+  border: 1px solid black;
+  padding: 0;
+  background-color: #f01746;
+  color: rgb(243, 248, 243);
+  text-align: center;
+  font-size: medium;
+  margin-left: 82%;
+  margin-right: auto;
+  top: 0%;
+  border-radius: 850%;
+}
+
+
+
+
 /* Styling for users */
 #users {
   width: 20%;

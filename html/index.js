@@ -67,13 +67,25 @@ async function getUsers() {
 
 
 
-
-
-
-
 //directing to login page when click any part of the users
 let usersSection = document.getElementById('users');
 
 usersSection.addEventListener('click', function() {
   window.location.href = 'login.html';
+});
+
+
+
+
+
+
+
+//Directing to Admin logn page when clicked
+// Get the section element
+const adminPanel = document.getElementById('adminPanel');
+
+// Add an event listener for the click event
+adminPanel.addEventListener('click', function() {
+  // Redirect to adminlogin.html
+  window.location.href = 'adminlogin.html';
 });
