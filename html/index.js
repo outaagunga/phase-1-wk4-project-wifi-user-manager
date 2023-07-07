@@ -34,8 +34,7 @@ document.getElementById("packageDropdown").addEventListener("change", function()
 
 
 
-// index.js
-
+// Function to fetch enabled (unblocked users and display on the users ui page)
 document.addEventListener("DOMContentLoaded", getUsers);
 
 async function getUsers() {
@@ -45,9 +44,11 @@ async function getUsers() {
 
     const usersList = document.getElementById("theusers");
     users.forEach((user) => {
-      const listItem = document.createElement("li");
-      listItem.textContent = user.username;
-      usersList.appendChild(listItem);
+      if (!user.blocked) { // Only populate users with blocked status "false"
+        const listItem = document.createElement("li");
+        listItem.textContent = user.username;
+        usersList.appendChild(listItem);
+      }
     });
   } catch (error) {
     console.error("Error fetching users:", error);

@@ -6,7 +6,8 @@
       "email": "john.doe@example.com",
       "phone": "+1234567890",
       "package": "starter",
-      "password": "pass123"
+      "password": "pass123",
+      "blocked": false
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@
       "email": "oumawycliffe@gmail.com",
       "phone": "0720876376",
       "package": "starter",
-      "password": "12345678o"
+      "password": "12345678o",
+      "blocked": false
     },
     {
       "id": 3,
@@ -22,7 +24,8 @@
       "email": "moha12@gmail.com",
       "phone": "0720021657",
       "package": "starter",
-      "password": "1234567m"
+      "password": "1234567m",
+      "blocked": false
     },
     {
       "id": 4,
@@ -30,7 +33,17 @@
       "email": "iboyie@gmail.com",
       "phone": "0710360936",
       "package": "premium",
-      "password": "abogoi"
+      "password": "abogoi",
+      "blocked": false
+    },
+    {
+      "username": "Jocenter Adhiambo",
+      "email": "adhiambo@gmail.com",
+      "phone": "0727641032",
+      "package": "starter",
+      "password": "adhis",
+      "id": 5,
+      "blocked": false
     }
   ],
   "admin": [
@@ -41,16 +54,6 @@
       "phone": "+254720905275",
       "package": "exempted",
       "password": "admin-123"
-    },
-    {
-      "username": "systemadmin",
-      "password": "admin12",
-      "id": 2
-    },
-    {
-      "username": "systemadmin",
-      "password": "admin123",
-      "id": 3
     }
   ]
 }
