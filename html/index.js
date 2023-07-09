@@ -1,22 +1,11 @@
+//Function to display the hidden signup  form
+let signupButton = document.getElementById('signup-button');
+let signupForm = document.getElementById('signup-form');
 
-
-//Functin to direct people to Signup page 
-document.getElementById("packageDropdown").addEventListener("change", function() {
-  let selectedValue = this.value;
-
-  switch (selectedValue) {
-    case "basic":
-      window.location.href = "signup.html";
-      break;
-    case "standard":
-      window.location.href = "signup.html";
-      break;
-    case "premium":
-      window.location.href = "signup.html";
-      break;
-    default:
-      break;
-  }
+// Add an event listener to the signup button
+signupButton.addEventListener('click', function() {
+  // Change the display property of the signup form to 'block'
+  signupForm.style.display = 'block';
 });
 
 
@@ -25,6 +14,15 @@ document.getElementById("packageDropdown").addEventListener("change", function()
 
 
 
+//Function to display the hidden login form
+let loginButton = document.getElementById('login-button');
+let loginForm = document.getElementById('loginForm');
+
+// Add an event listener to the signup button
+loginButton.addEventListener('click', function() {
+  // Change the display property of the signup form to 'block'
+  loginForm.style.display = 'block';
+});
 
 
 
@@ -32,61 +30,37 @@ document.getElementById("packageDropdown").addEventListener("change", function()
 
 
 
-
-
-// Function to fetch enabled (unblocked users and display on the users ui page)
-document.addEventListener("DOMContentLoaded", getUsers);
-
-async function getUsers() {
-  try {
-    const response = await fetch("http://localhost:3000/users");
-    const users = await response.json();
-
-    const usersList = document.getElementById("theusers");
-    users.forEach((user) => {
-      if (!user.blocked) { // Only populate users with blocked status "false"
-        const listItem = document.createElement("li");
-        listItem.textContent = user.username;
-        usersList.appendChild(listItem);
+//Fuction to display signup button when when any package is selected
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the package dropdown element
+    let packageDropdown = document.getElementById('packageDropdown');
+    // Get the sign-up form element
+    let signUpForm = document.getElementById('signup-form');
+    // Get the submit button element
+    let submitButton = document.getElementById('submit-button');
+    
+    // Add event listener for package selection
+    packageDropdown.addEventListener('change', function() {
+      // Get the selected package value
+      let selectedPackage = packageDropdown.value;
+      
+      // Check if a package is selected
+      if (selectedPackage !== '') {
+        // Display the sign-up form
+        signUpForm.style.display = 'block';
+      } else {
+        // Hide the sign-up form
+        signUpForm.style.display = 'none';
       }
     });
-  } catch (error) {
-    console.error("Error fetching users:", error);
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//directing to login page when click any part of the users
-let usersSection = document.getElementById('users');
-
-usersSection.addEventListener('click', function() {
-  window.location.href = 'login.html';
-});
-
-
-
-
-
-
-
-//Directing to Admin logn page when clicked
-// Get the section element
-const adminPanel = document.getElementById('adminPanel');
-
-// Add an event listener for the click event
-adminPanel.addEventListener('click', function() {
-  // Redirect to adminlogin.html
-  window.location.href = 'adminlogin.html';
-});
+    
+    // Add event listener for submit button click
+    submitButton.addEventListener('click', function(event) {
+      // Prevent the default form submission behavior
+      event.preventDefault();
+      
+      // Hide the sign-up form
+      signUpForm.style.display = 'none';
+    });
+  });
+  

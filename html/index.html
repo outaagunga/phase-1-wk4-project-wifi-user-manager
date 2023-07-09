@@ -1,97 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Jeco Enterprizes WiFi User Manager</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeco Internet Services</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
-  
-   <header>
-    <section id="topsection"> 
-      <div>
-        <img src="../images/wifi.png" alt="image" id="wifiImage">
-      </div>
-      
-      <div>
-        <img src="../images/phone.jpeg" alt="image" id="phoneImage">
-      </div>
-
-      <div>
-        <img src="../images/setting.jpeg" alt="image" id="settingImage">
-      </div>
-
-      <div>
-        <img src="../images/help.png" alt="image" id="helpImage">
-      </div>
-     </section>
-
-  <Section> 
-
-    <h1 id="heading1">Jeco Enterprizes WiFi User Manager</h1>
-  </Section>
-    <nav>
-      <!-- Add navigation links if needed -->
-    </nav>
-  </header>
-  
-  <main id="mainPart">
-    <section id="services1">
-      <h2>Get Connected</h2>
-      <p>Please select your desired package to enjoy our services at affordable rates</p>
-      
-      <select id="packageDropdown">
-        <option value="">Select a package</option>
-        <option value="basic">Starter Package 4mbps @ 600/=</option>
-        <option value="basic">Basic Package 8mbps @ 1,500/=</option>
-        <option value="standard">Standard Package 20mbps @ 3,000/=</option>
-        <option value="premium">Premium Package 40mbps @ 5,000/=</option>
-      </select>
-      
-      <ul id="servicesList"></ul>
-    </section>
-  
 
 
-    <section id="adminPanel">
-      <h2>Admin Panel</h2>
-      <p>Only those with Admin powers can modify</p>
-       </section>
+
+<header>
+<div id="logo-area">
+    <img src="../images/wifi.png" alt="image" id="wifiImage">
+    <img src="../images/phone.jpeg" alt="image" id="phoneImage">
+    <img src="../images/setting.jpeg" alt="image" id="settingImage">
+    <img src="../images/help.png" alt="image" id="helpImage">
+</div>
+<h1 id="topHeading">Jeco Enterprizes WiFi User Manager</h1>
+</header>
 
 
 
 
-  
-  <section id="users">
-    <h2>Our Loyal Customers</a></h2>
-    <p>We appreciate their trust in our services.</p>
+<body id="backgroundImage">
+
+    <div id="internetplans">
+        <h2>Our Internet Plans</h2>
+        <p>Please select your desired package to enjoy our services at affordable rates</p>
+        
+        <select id="packageDropdown">
+          <option value="">Select a package</option>
+          <option value="basic">Starter Package 4mbps @ 600/=</option>
+          <option value="basic">Basic Package 8mbps @ 1,500/=</option>
+          <option value="standard">Standard Package 20mbps @ 3,000/=</option>
+          <option value="premium">Premium Package 40mbps @ 5,000/=</option>
+        </select>
+        <ul id="servicesList"></ul>
+    </div>
+
+
+
+<!---signup page-->
+    <div id="subscribe">
+    <button id="signup-button">Sign Up</button>
+      <form action="" method="POST" id="signup-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+    
+        <label for="package">Desired Package:</label>
+        <select id="package" name="package" required>
+          <option value="starter">Starter Package 4mbps @ 600/=</option>
+          <option value="basic">Basic Package 8mbps @ 1,500/=</option>
+          <option value="standard">Standard Package 20mbps @ 3,000/=</option>
+          <option value="premium">Premium Package 40mbps @ 5,000/=</option>
+        </select>
+    
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+    
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+    
+        <input type="submit" value="Sign Up">
+      </form>
+    </div>
+    
+
+
+
+
+
+
+
+    <div id="adminPanel">
+        <h2>Admin Panel</h2>
+        <p>Click here to login as Admin</p>
+    </div>
+
+
+<!--Login page-->
+<div id="loGin">
+  <button id="login-button">login</button>
+    <form id="loginForm" action="" method="POST">
+      <label for="username">Username:</label>
+      <input type="text" id="userName" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="passWord" name="password" required>
+
+      <input type="submit" value="Login">
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <div id="users">
+    <h2>Users Online</h2>
+    <p>.</p>
     <ul id="theusers">
       <!-- users list items will be dynamically added here -->
     </ul>
-  </section>
+  </div>
+
+
+
+  <div id="why_choose_us">
+    <h2>Why choose us </h2>
+    <p>We always strive to deliver Quality services to our customers since we understand their needs. </p>
+    <ul id="online1">
+      <!-- online clients details will be dynamically displayed here -->
+    </ul>
+  </div>
+
   
 
-    <section id="connectedClients">
-      <h2>Why choose us </h2>
-      <p>We always strive to deliver Quality services to our customers since we understand their needs. </p>
-      <ul id="online1">
-        <!-- online clients details will be dynamically displayed here -->
-      </ul>
-    </section>
 
-    <section id="isAdmin">
-      <h2>More about your profile</h2>
-      <p>Please login <a href="login.html">here</a></p>
-      <div id="block-unblock-form">
-        <!-- Admin controls form will be dynamically generated here -->
-      </div>
-    </section>
-    
-    </main>
-    <footer>
-      <p>&copy; 2023 Jeco Enterprise Wifi services. All rights reserved.</p>
-      <p>Created and manged by mc. Agunga</p>
-  </footer>
+
+
+
+
+
+
+
+
 
   <script src="index.js"></script>
 </body>
+    <footer>
+        <p>&copy; 2023 Jeco Enterprise Wifi services. All rights reserved.</p>
+        <p>Created and manged by mc. Agunga</p>
+    </footer>
 </html>

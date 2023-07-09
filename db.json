@@ -44,6 +44,15 @@
       "password": "adhis",
       "id": 5,
       "blocked": false
+    },
+    {
+      "username": "moringa",
+      "email": "moringa@gmail.com",
+      "phone": "12783",
+      "package": "starter",
+      "password": "moringa2",
+      "id": 6,
+      "blocked": false
     }
   ],
   "admin": [
